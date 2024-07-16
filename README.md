@@ -1,0 +1,1 @@
+This is a sample ontology of a tdv6 engine. it contains major parts of the engine as a start. Proeje software was used to attain the ontology and each part contains a little description of its physical properties and how they relate to one another
