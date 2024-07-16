@@ -1,0 +1,581 @@
+@prefix : <urn:absolute:h/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:absolute:h/> .
+
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly> rdf:type owl:Ontology ;
+                                                                       rdfs:seeAlso "This is an ontology about engine asssembly" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings> ;
+                                                                               rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ;
+                                                                             rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> ;
+                                                                               rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                          <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain> ,
+                                                                                            <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> ;
+                                                                                rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> ;
+                                                                               rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> ,
+                                                                                          <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> ;
+                                                                              rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold> ;
+                                                                                rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType> ;
+                                                                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf owl:topDataProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ;
+                                                                              rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ;
+                                                                                       rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ;
+                                                                                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ;
+                                                                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ;
+                                                                                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf owl:topDataProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                            rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ;
+                                                                                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ;
+                                                                                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                                 <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ;
+                                                                                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> ,
+                                                                                           <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ;
+                                                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ;
+                                                                                rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ;
+                                                                                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ;
+                                                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> ;
+                                                                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ,
+                                                                                             <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ;
+                                                                                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ;
+                                                                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ;
+                                                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ;
+                                                                                rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ;
+                                                                                        rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                               <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> ;
+                                                                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ;
+                                                                                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ;
+                                                                                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ;
+                                                                                rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ;
+                                                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ;
+                                                                             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> ,
+                                                                                         <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> ;
+                                                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf owl:topDataProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> ,
+                                                                                        <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> ;
+                                                                            rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#camshaft_retainer
+:camshaft_retainer rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#connectingrod_cap
+:connectingrod_cap rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> rdf:type owl:Class ;
+                                                                                     owl:equivalentClass <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TDV6
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TDV6> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust> .
+
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300
+<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300> rdf:type owl:NamedIndividual ,
+                                                                                                     <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> ;
+                                                                                            <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> "1.1mm" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>
+                <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>
+                <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>
+                <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

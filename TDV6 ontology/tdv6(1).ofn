@@ -1,0 +1,908 @@
+Prefix(:=<urn:absolute:h/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly>
+Annotation(rdfs:seeAlso "This is an ontology about engine asssembly")
+
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TDV6>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs>))
+Declaration(Class(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring>))
+Declaration(Class(:camshaft_retainer))
+Declaration(Class(:connectingrod_cap))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_2fe34437_2205_47fd_b877_29e294c31266>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_620c1da1_7917_416e_a0fd_4b497833fc75>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_79eb5beb_e228_4ef7_8ed9_c6888ac38f3d>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight>))
+Declaration(DataProperty(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/AroundOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Behind> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BottomOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InfrontOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/InsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/NextOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OnTopOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TopsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Object Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hasRelation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold>)
+ObjectPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/bottomsideOf> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_2fe34437_2205_47fd_b877_29e294c31266> (JournalDiameter)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_2fe34437_2205_47fd_b877_29e294c31266> "JournalDiameter"@en)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_620c1da1_7917_416e_a0fd_4b497833fc75> (Height)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_620c1da1_7917_416e_a0fd_4b497833fc75> "Height"@en)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_79eb5beb_e228_4ef7_8ed9_c6888ac38f3d> (LobeHeight)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_79eb5beb_e228_4ef7_8ed9_c6888ac38f3d> "LobeHeight"@en)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> (Hardness)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> "Hardness"@en)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> (Diameter)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> "Diameter"@en)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CamLift> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CompressionRatio> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRodID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CoolantRatio> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/CylinderID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Depth> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Diameter> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Dimensions> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlowRate> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/FlywheelID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/LiquidLevel> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ManufacturerID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material>)
+
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxRPM> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxSpeed> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MaxTorque> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/MeshSize> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilFilterID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilLevel> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPressure> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilTemperature> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilpanID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PartNumber> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonID> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PressureRating> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RingGap> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength>)
+
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RodLength> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/RotationalInertia> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SkirtClearance> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/StrokeLength> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/TempResistance> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Timing> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Volume> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+DataPropertyDomain(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+DataPropertyRange(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> xsd:float)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>)
+
+EquivalentClasses(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineType>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineAssembly>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Piston>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust>)
+
+# Class: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring>)
+
+SubClassOf(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake>)
+
+# Class: :camshaft_retainer (:camshaft_retainer)
+
+SubClassOf(:camshaft_retainer <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft>)
+
+# Class: :connectingrod_cap (:connectingrod_cap)
+
+SubClassOf(:connectingrod_cap <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonAssembly>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857>)
+
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> "84mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> "650mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> "cast iron or alluminium alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> "80Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR004857> "450mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380>)
+
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Crankshaft> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> "650mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> "Forged steel or cast iron")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> "20mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> "27Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013380> "main journals: 65 mm
+crank pins: 55 mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381>)
+
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/crankshaft_bearing> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_2fe34437_2205_47fd_b877_29e294c31266> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> "7mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> "70mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> "multi-layer material:
+Overlay: Soft metal such as lead-tin-copper or aluminum-tin
+Intermediate Layer: Copper-lead alloy for strength and fatigue resistance.
+Back Layer: Steel or bronze for structural support.")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> "2.5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#LR013381> "23mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> (LR005147)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> "LR005147"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/OilPump> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> "150mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> "70mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> "1.5Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_0559c601_6be8_4f5e_9609_e1d2faef3eaa> "120mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> (LR017309)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "LR017309"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/intake_manifold> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "450mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "Alluminium")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "4mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "3Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_05cb60fe_70fe_425f_b13c_aa0822032333> "200mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> (LR019117)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "LR019117"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Chain> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "120mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "High strength steel alloys")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "1..5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "1.5Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_1ad4faec_fffc_4539_939a_7f57e987ba15> "7mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> (LR005901)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "LR005901"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/exhaust_manifold> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "320mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "Cast iron or high grade stainless steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "4.5Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_233605dd_731b_4aca_bb85_cf171655f6de> "150mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> (LR005461)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> "LR005461"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_exhaust> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> "Head diameter: 33mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> "109.4mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> "Heat resistant alloys")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_292006b8_d69c_429f_adf5_f211f3af8db7> "100g")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> (LR008353)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "LR008353"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Camshaft> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_2fe34437_2205_47fd_b877_29e294c31266> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "37mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_79eb5beb_e228_4ef7_8ed9_c6888ac38f3d> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "9mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "55HRC")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "550mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "Forged steel or cast iron")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2d3a0dc6_fa21_45b3_8a12_756819f8cde7> "5Kg")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> (LR005243)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> "LR005243"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/hydraulic_lifter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> "33mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> "Hardened steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> "50g")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_2f3685e2_3b57_4301_9325_a66d6d316937> "12mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> (LR005808)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "LR005808"@en)
+ClassAssertion(:connectingrod_cap <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "60mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "83mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "Forged steel or high strength steel alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "11mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "170g")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_4d15fec1_38bb_4441_8e8b_8f8db5cd07e7> "23mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> (LR005457)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> "LR005457"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/camshaft_bearings> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> "20mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> "Babbit bronze or alluminium alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> "2mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_669527cf_8c68_48e5_8310_a9d9440e97d8> "30mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> (LR008162)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "LR008162"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "590mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "Alluminium alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "150mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "22Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_6c56d968_dc6e_48f6_8da5_9fa9760f9ca4> "200mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> (1311327)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "1311327"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Strainer> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "110mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "Stainless steel mesh and alluminum housing")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "1mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "0.3Kg")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_76d8828e_a1d9_4e68_bc9c_ecee5d9ed7bf> "50mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> (LR013518)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> "LR013518"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Flywheel> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> "340mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> "High grade steel or cast iron")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> "30mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_8eaeaa6f_e05e_4c49_8b0c_4362f5b610c8> "10Kg")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> (LR005892)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "LR005892"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/BoreDiameter> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "84mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "290mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "Multilayer steel construction, 3 or more layers, with rubber coating")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "1.3mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_9370d059_0b28_47ef_8230_886a1ae39069> "190mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> (LR006450)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> "LR006450"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_intake> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> "34mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> "110mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> "Stainless steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ab4c3351_948e_4e46_8de6_54d0f9f02660> "6mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> (LR010839)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> "LR010839"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_ring> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> "20mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> "High strength spring steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> "1mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_adf1c0a5_dbc5_4567_8b2c_75997bf11ea5> "5mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> (LR006919)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "LR006919"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "150mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Capacity> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "7.2mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "450mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "Alluminium or steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "3.5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bcdf0cda_fcf7_4b7d_ade2_77b98694ccf9> "300mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> (LR005453)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> "LR005453"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_cover_gasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> "330mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> "High quality rubber or rubber composite material")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> "2.5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_bf9b76f0_d54d_4eb7_b707_0ced0962aa3f> "17mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> (LR004430)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "LR004430"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHeadRings> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "60HRC")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "84mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "Cast iron or steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "Lapped or honed")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_c021eff9_17e0_4d7f_b32f_a019567b9889> "Top compression ring: 1.5 mm
+Second compression ring: 1.75 mm
+Oil control ring: 3.0 mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> (LR004430)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "LR004430"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/gudgeon_pin> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "60HRC")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "25mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "70mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "Hardened steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "Chrome layer")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "4mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_d2b6cb1d_2b8a_4123_9ca2_ee2d3fdd777a> "150g")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> (LR005809)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> "LR005809"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/ConnectingRod> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> "155mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> "High strenght forged steel")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> "10mmm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_def4ea9b_abf0_4c40_a700_5484f441ea35> "22mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> (LR005448)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> "LR005448"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valves_spring> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> "Uncompressed: 46mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> "High strength steel alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> "3mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_e0906e4f_de03_4392_869e_59ecf09366f3> "27mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> (LR005448)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> "LR005448"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/valve_springs> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> "Uncompressed: 46mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> "High strength steel alloys")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> "3mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_ed41cb3f_bbe5_4d7e_ad5e_a43dc3ba2ecc> "27mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> (LR005502)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "LR005502"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/roller_rocker> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "75mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "high-strength steel or forged aluminum alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "12mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "80g")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_efda261b_b0cc_4689_a111_d400e082eb05> "15mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> (LR004436)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "LR004436"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/PistonHead> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_ddbf86b4_1ebd_4ac4_b611_a7b749e37907> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "84mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "75mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "aluminum alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SurfaceFinish> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "Ceramic or graphite coating")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "7mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f14466c0_91f5_4276_8a38_6349e4bd7913> "550g")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> (LR009705)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> "LR009705"@en)
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/SumpGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> "450mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> "Multilayer steel construction, 3 or more layers, with rubber coating")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> "2.5mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_f813e023_0397_4861_89b6_e60e70432033> "300mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> (LR10667)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "LR10667"@en)
+ClassAssertion(:camshaft_retainer <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLDataProperty_cfe452e8_0be5_4a16_82b5_1a783cc1b24c> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "55HRC")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Length> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "90mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Material> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "High strength steel or steel alloy")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "7mm")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Weight> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "150g")
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Width> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#OWLNamedIndividual_fabcd6a2_3302_4c88_bde5_1a99c3323e17> "25mm")
+
+# Individual: <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300> (<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300>)
+
+ClassAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300>)
+DataPropertyAssertion(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Thickness> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly#04111-30050_510021300> "1.1mm")
+
+
+DisjointClasses(<http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineBlock> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/EngineHead> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/HeadGasket> <http://www.semanticweb.org/murithi/ontologies/2024/5/EngineAssembly/Sump>)
+)
